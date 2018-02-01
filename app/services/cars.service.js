@@ -23,6 +23,10 @@ angular.module('fourWheels').service('carsSrvc', function() {
     },
   ];
 
+  this.getCars = function() {
+    return this.cars.slice()
+  }
+
   this.buyCar = function( id ) {
     const carIndex = this.cars.findIndex( car => car.id === id );
 
