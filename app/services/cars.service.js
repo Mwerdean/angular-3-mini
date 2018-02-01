@@ -1,4 +1,4 @@
-angular.module('fourWheels').service('carsSrvc', function( $http ) {
+angular.module('fourWheels').service('carsSrvc', function() {
   this.cars = [
     {
       id: '0',
